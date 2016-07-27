@@ -11,12 +11,20 @@ import AVFoundation
 
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,
-    UICollectionViewDelegateFlowLayout
+    UICollectionViewDelegateFlowLayout,
+    UISearchBarDelegate
 {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var searchBar: UISearchBar!
     var pokemon = [Pokemon]()
+    //it equles to pokemon arr, but just use for searching bar
+    var filterPokemon = [Pokemon]()
+    //if we r in the search mode, it means we need to use filterPokemon this array
+    var inSearchMode: Bool = false
+    
+    
     var musicPlayer: AVAudioPlayer!
 
     override func viewDidLoad() {
@@ -25,8 +33,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-    
+        searchBar.delegate = self
+        //make keyboard's return to done
+        searchBar.returnKeyType = UIReturnKeyType.Done
         self.parsePokeMonCSV()
         self.initAudio()
     }
@@ -69,7 +78,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PokeCell", forIndexPath: indexPath) as? PokeCell {
             
-            var poke = pokemon[indexPath.row]
+            var poke: Pokemon!
+            if inSearchMode{
+                poke = filterPokemon[indexPath.row]
+            }else{
+                poke = pokemon[indexPath.row]
+
+            }
             
             cell.configureCell(poke)
             
@@ -86,7 +101,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 718
+        if inSearchMode{
+            return filterPokemon.count
+        }
+        
+        return pokemon.count
+        
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -114,6 +134,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return 10
     }
     
+    //MARK: AVAudioPlayer
     
     func initAudio() {
         let path = NSBundle.mainBundle().pathForResource("music", ofType: "mp3")
@@ -138,6 +159,45 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             musicPlayer.play()
             sender.alpha = 1.0
         }
+    }
+    
+    //MARK: SearchBar
+    
+    //when keyboard上的search 按鈕被按下後
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        view.endEditing(true)
+    }
+    
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == nil || searchBar.text == ""{
+            inSearchMode = false
+            
+            //when finishing editing, we can force view to end editing
+            //and make coo=llectionView reloadData
+            //ex: delete all the text in searchbar
+            //view.endEditing(true) can hide keyboard
+            view.endEditing(true)
+            collectionView.reloadData()
+        }else{
+            inSearchMode = true
+            //將searchbar中的輸入的文字先轉成小寫，以利於後面的比對
+            let lower = searchBar.text?.lowercaseString
+            //$0 means every single object in pokemon arr, it can grab one pokemon object,poke
+            //and grab poke.name to filter withe the word type in search bar
+            //ex: $0 可以看成 var poke = pokemon[23]這個object
+            //rangeOfString會去比對相符合的字串，最後在回傳到filterPokemon
+            //filterPokemon = pokemon.filter({ $0.name .rangeOfString(lower!) != nil})
+            //也可用這種方式打～～
+            filterPokemon = pokemon.filter({ (poke) -> Bool in
+                poke.name.rangeOfString(lower!) != nil
+            })
+            //everytime call reloadData in tableView, it will refresh whole list and grab every thing from ur datasource again
+            collectionView.reloadData()
+
+        }
+        
+        
     }
 }
 
