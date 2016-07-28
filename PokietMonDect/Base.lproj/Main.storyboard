@@ -178,6 +178,9 @@
                                             <constraint firstAttribute="width" constant="34" id="bkq-yo-uPv"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtn:" destination="pGf-rf-KKm" eventType="touchUpInside" id="EbT-nL-PPX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -392,6 +395,20 @@
                             <constraint firstItem="CoA-Ta-y1E" firstAttribute="leading" secondItem="CEL-6D-faU" secondAttribute="leading" id="wqU-Ik-e6I"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="evoLabel" destination="1zj-Ed-f4Y" id="YxI-yL-xYG"/>
+                        <outlet property="pokeDescription" destination="dbk-E4-ftD" id="lD9-b4-UIX"/>
+                        <outlet property="pokeImg" destination="DWT-OT-c1b" id="2ag-EA-lEJ"/>
+                        <outlet property="pokeNameLabel" destination="Yxv-eP-Et5" id="1Mp-ts-vDV"/>
+                        <outlet property="pokemonAttack" destination="eLW-I4-lYM" id="DZk-VV-whD"/>
+                        <outlet property="pokemonCurrEvoImg" destination="6Iq-sG-l8Q" id="PwU-1T-l0e"/>
+                        <outlet property="pokemonDef" destination="xT9-um-Uig" id="dQ2-11-N44"/>
+                        <outlet property="pokemonHeight" destination="9p8-7z-cHb" id="vW3-mF-jaj"/>
+                        <outlet property="pokemonNextEvoImg" destination="JKs-0t-tvM" id="LfX-fG-mpW"/>
+                        <outlet property="pokemonPokedexID" destination="LEY-Lf-NGg" id="rkv-t9-mlV"/>
+                        <outlet property="pokemonType" destination="iW2-zY-6dU" id="1Ha-Ot-4U4"/>
+                        <outlet property="pokemonWeight" destination="PxP-8E-lVs" id="xAU-IL-aZh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRe-fc-Txv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
