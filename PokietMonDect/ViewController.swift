@@ -55,7 +55,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             //if sucess
             let csv = try CSV(contentsOfURL: path)
             let rows = csv.rows
-            print(rows)
             
             for row in rows{
                 let pokeID = Int(row["id"]!)!
@@ -63,7 +62,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 let poke = Pokemon(name: name, pokedexID: pokeID)
                 pokemon.append(poke)
             }
-            print(self.pokemon)
 
             
         }catch let err as NSError {

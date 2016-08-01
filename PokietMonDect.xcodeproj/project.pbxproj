@@ -14,14 +14,18 @@
 		823309AD1D481D4000FF965E /* PokemonFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 823309AC1D481D4000FF965E /* PokemonFont.ttf */; };
 		823309B11D48237000FF965E /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 823309B01D48237000FF965E /* music.mp3 */; };
 		823309B31D4869F900FF965E /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823309B21D4869F900FF965E /* PokemonDetailVC.swift */; };
+		823309B51D49C0D300FF965E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 823309B41D49C0D300FF965E /* Podfile */; };
+		823309B71D49E8C600FF965E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823309B61D49E8C600FF965E /* Constant.swift */; };
 		82BA68DF1D45C4E3004345B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BA68DE1D45C4E3004345B4 /* AppDelegate.swift */; };
 		82BA68E11D45C4E3004345B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BA68E01D45C4E3004345B4 /* ViewController.swift */; };
 		82BA68E41D45C4E3004345B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82BA68E21D45C4E3004345B4 /* Main.storyboard */; };
 		82BA68E61D45C4E3004345B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82BA68E51D45C4E3004345B4 /* Assets.xcassets */; };
 		82BA68E91D45C4E3004345B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82BA68E71D45C4E3004345B4 /* LaunchScreen.storyboard */; };
+		F19C83C83494817672E2E462 /* Pods_PokietMonDect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33AC3B9196DCC709E5FC4FA /* Pods_PokietMonDect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25F988E66A5A3F04C610EF9D /* Pods-PokietMonDect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokietMonDect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokietMonDect/Pods-PokietMonDect.debug.xcconfig"; sourceTree = "<group>"; };
 		8233099D1D46570000FF965E /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		823309A31D46D88F00FF965E /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		823309A51D46EA4800FF965E /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
@@ -29,6 +33,8 @@
 		823309AC1D481D4000FF965E /* PokemonFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonFont.ttf; sourceTree = "<group>"; };
 		823309B01D48237000FF965E /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		823309B21D4869F900FF965E /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
+		823309B41D49C0D300FF965E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		823309B61D49E8C600FF965E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		82BA68DB1D45C4E3004345B4 /* PokietMonDect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokietMonDect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BA68DE1D45C4E3004345B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82BA68E01D45C4E3004345B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		82BA68E51D45C4E3004345B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82BA68E81D45C4E3004345B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82BA68EA1D45C4E3004345B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88921FD0E681825BC16BC9DB /* Pods-PokietMonDect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokietMonDect.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokietMonDect/Pods-PokietMonDect.release.xcconfig"; sourceTree = "<group>"; };
+		A33AC3B9196DCC709E5FC4FA /* Pods_PokietMonDect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokietMonDect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19C83C83494817672E2E462 /* Pods_PokietMonDect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				823309A71D4712C700FF965E /* csv.swift */,
+				823309B61D49E8C600FF965E /* Constant.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -100,6 +110,9 @@
 			children = (
 				82BA68DD1D45C4E3004345B4 /* PokietMonDect */,
 				82BA68DC1D45C4E3004345B4 /* Products */,
+				823309B41D49C0D300FF965E /* Podfile */,
+				BC913C427D6BAE0513360B46 /* Pods */,
+				99301666EE325B6D9043154F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +138,23 @@
 			path = PokietMonDect;
 			sourceTree = "<group>";
 		};
+		99301666EE325B6D9043154F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A33AC3B9196DCC709E5FC4FA /* Pods_PokietMonDect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC913C427D6BAE0513360B46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25F988E66A5A3F04C610EF9D /* Pods-PokietMonDect.debug.xcconfig */,
+				88921FD0E681825BC16BC9DB /* Pods-PokietMonDect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82BA68ED1D45C4E3004345B4 /* Build configuration list for PBXNativeTarget "PokietMonDect" */;
 			buildPhases = (
+				511679B5B4F4FF6747817DD6 /* [CP] Check Pods Manifest.lock */,
 				82BA68D71D45C4E3004345B4 /* Sources */,
 				82BA68D81D45C4E3004345B4 /* Frameworks */,
 				82BA68D91D45C4E3004345B4 /* Resources */,
+				2F332C6B05210B333346B47B /* [CP] Embed Pods Frameworks */,
+				9512AE0CE81CD5C77DF258B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,17 +221,67 @@
 				823309B11D48237000FF965E /* music.mp3 in Resources */,
 				8233099E1D46570000FF965E /* pokemon.csv in Resources */,
 				823309AD1D481D4000FF965E /* PokemonFont.ttf in Resources */,
+				823309B51D49C0D300FF965E /* Podfile in Resources */,
 				82BA68E41D45C4E3004345B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F332C6B05210B333346B47B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokietMonDect/Pods-PokietMonDect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		511679B5B4F4FF6747817DD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9512AE0CE81CD5C77DF258B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokietMonDect/Pods-PokietMonDect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		82BA68D71D45C4E3004345B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823309B71D49E8C600FF965E /* Constant.swift in Sources */,
 				823309A61D46EA4800FF965E /* PokeCell.swift in Sources */,
 				82BA68E11D45C4E3004345B4 /* ViewController.swift in Sources */,
 				82BA68DF1D45C4E3004345B4 /* AppDelegate.swift in Sources */,
@@ -315,6 +398,7 @@
 		};
 		82BA68EE1D45C4E3004345B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F988E66A5A3F04C610EF9D /* Pods-PokietMonDect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PokietMonDect/Info.plist;
@@ -326,6 +410,7 @@
 		};
 		82BA68EF1D45C4E3004345B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88921FD0E681825BC16BC9DB /* Pods-PokietMonDect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PokietMonDect/Info.plist;

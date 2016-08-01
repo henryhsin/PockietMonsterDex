@@ -327,32 +327,20 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hjg-ol-Gf7">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hjg-ol-Gf7">
                                 <rect key="frame" x="24" y="462" width="560" height="120"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="6Iq-sG-l8Q">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="xBe-Io-70W"/>
-                                            <constraint firstAttribute="width" constant="120" id="xsl-qU-fvd"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="xsl-qU-fvd"/>
-                                            </mask>
-                                        </variation>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="JKs-0t-tvM">
                                         <rect key="frame" x="280" y="0.0" width="280" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="XM5-lF-4a9"/>
-                                            <constraint firstAttribute="width" constant="120" id="xoM-8l-YHY"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="xoM-8l-YHY"/>
-                                            </mask>
-                                        </variation>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -396,13 +384,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="evoLabel" destination="1zj-Ed-f4Y" id="YxI-yL-xYG"/>
                         <outlet property="pokeDescription" destination="dbk-E4-ftD" id="lD9-b4-UIX"/>
                         <outlet property="pokeImg" destination="DWT-OT-c1b" id="2ag-EA-lEJ"/>
                         <outlet property="pokeNameLabel" destination="Yxv-eP-Et5" id="1Mp-ts-vDV"/>
                         <outlet property="pokemonAttack" destination="eLW-I4-lYM" id="DZk-VV-whD"/>
                         <outlet property="pokemonCurrEvoImg" destination="6Iq-sG-l8Q" id="PwU-1T-l0e"/>
                         <outlet property="pokemonDef" destination="xT9-um-Uig" id="dQ2-11-N44"/>
+                        <outlet property="pokemonEvoLabel" destination="1zj-Ed-f4Y" id="llB-M7-s4W"/>
                         <outlet property="pokemonHeight" destination="9p8-7z-cHb" id="vW3-mF-jaj"/>
                         <outlet property="pokemonNextEvoImg" destination="JKs-0t-tvM" id="LfX-fG-mpW"/>
                         <outlet property="pokemonPokedexID" destination="LEY-Lf-NGg" id="rkv-t9-mlV"/>
